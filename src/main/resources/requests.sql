@@ -1,7 +1,7 @@
 create table houses (
     id integer primary key autoincrement,
     price integer check ( price > 0 ),
-    district text,
+    district text not null,
     underground text
 );
 
